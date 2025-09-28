@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; background: linear-gradient(to bottom, #FFD700, #FF69B4); margin: 0; padding: 0;}
+        .banner { padding: 20px; font-size: 2rem; font-weight: bold; color: white; text-shadow: 2px 2px 5px #000;}
+        .photo { margin: 20px 0; max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 0 10px #000;}
+        .wishes { font-size: 1.5rem; color: #fff; text-shadow: 1px 1px 3px #000; margin-bottom: 30px;}
+    </style>
+</head>
+<body>
+    <div class="banner">🎉 Happy Birthday! 🎉</div>
+    <img src="{{ url_for('static', filename='birthday.jpg') }}" alt="Birthday Photo" class="photo">
+    <div class="wishes">Wishing you a day full of love, laughter, and happiness! 🥳</div>
+</body>
+</html>
